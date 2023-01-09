@@ -1,0 +1,26 @@
+
+akash@SF-CPU-0153 MINGW64 /c
+$ git clone "https://github.com/Akash-Rana-25/8009"
+Cloning into '8009'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+akash@SF-CPU-0153 MINGW64 /c
+$ git config --global branch.autosetuprebase always
+
+akash@SF-CPU-0153 MINGW64 /c
+$ git config --global color.ui true
+
+akash@SF-CPU-0153 MINGW64 /c
+$ git config --global color.status auto
+
+akash@SF-CPU-0153 MINGW64 /c
+$ git config --global color.branch auto
+
+akash@SF-CPU-0153 MINGW64 /c
+$ git config --global core.editor vim
+
+akash@SF-CPU-0153 MINGW64 /c
+$ git config --global merge.tool vimdiff
