@@ -1,0 +1,73 @@
+
+akash@SF-CPU-0153 MINGW64 /c/8009 (branch2)
+$ git add .
+
+akash@SF-CPU-0153 MINGW64 /c/8009 (branch2)
+$ git status
+On branch branch2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   cp.txt
+
+
+akash@SF-CPU-0153 MINGW64 /c/8009 (branch2)
+$ git commit -m " Accidently make a commit in a wrong branch."
+[branch2 aab73e0]  Accidently make a commit in a wrong branch.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cp.txt
+
+akash@SF-CPU-0153 MINGW64 /c/8009 (branch2)
+$ git push origin branch2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Akash-Rana-25/8009
+   925ec99..aab73e0  branch2 -> branch2
+
+akash@SF-CPU-0153 MINGW64 /c/8009 (branch2)
+$ git log
+commit aab73e0f357473c2746bca30904a3adc4a51258e (HEAD -> branch2, origin/branch2)
+Author: Akash-Rana-25 <akashrana.work.gmail.com>
+Date:   Mon Jan 9 16:16:21 2023 +0530
+
+     Accidently make a commit in a wrong branch.
+
+commit 925ec99dbf4117a4af9dc764594f6adf5045c687
+Author: Akash-Rana-25 <akashrana.work.gmail.com>
+Date:   Mon Jan 9 15:25:02 2023 +0530
+
+    added login to branch2
+
+commit 879c2b8b527982be7ac090b46250acfdae2c9fb9
+Author: Akash-Rana-25 <akashrana.work.gmail.com>
+Date:   Mon Jan 9 15:06:44 2023 +0530
+
+    screenshots added
+
+commit 2db9a044fcb8843e4a5712c83c7390063d050ed3
+Author: Akash-Rana-25 <akashrana.work.gmail.com>
+Date:   Mon Jan 9 15:05:40 2023 +0530
+
+    first commit
+
+commit 65182d494ba270c4621fe1a7019519b796f523a0
+Author: Akash Rana <122073549+Akash-Rana-25@users.noreply.github.com>
+Date:   Mon Jan 9 14:41:29 2023 +0530
+
+    Initial commit
+
+akash@SF-CPU-0153 MINGW64 /c/8009 (branch2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+akash@SF-CPU-0153 MINGW64 /c/8009 (main)
+$ git cherry-pick aab73e0f357473c2746bca30904a3adc4a51258e
+[main 5de18ab]  Accidently make a commit in a wrong branch.
+ Date: Mon Jan 9 16:16:21 2023 +0530
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cp.txt
